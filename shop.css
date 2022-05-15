@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap');
+body, html {
+    position: relative;
+    -webkit-animation: b 1s ease;
+    animation: b 1s ease;
+    font-size: 15px;
+    margin: 0;
+	background-color: rgb(0, 0, 0);
+    padding: 0;
+   
+}
+body {
+    min-height: 100vh; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+* {
+    box-sizing: border-box;
+}
+a, a:hover {
+    color: rgb(255, 255, 255);
+}
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+span {
+	color: #fff;
+	font-family: 'Rokkitt', serif;
+}
+img {
+	width: 200px;
+	height: 200px;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 40px;
+	cursor: default;
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    opacity: 0;
+    transform: translate(0px, -50%);
+    transition: all 0.8s ease 0s;   
+}
+.logo._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.yumoney {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    align-items: center;
+}
+.fef {
+    display: flex;
+    justify-content: center;
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sitefooter{
+    margin-top:auto; 
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	z-index: 1;
+	padding: 20px;
+}
+h1:after {
+    display: block;
+    content: "";
+
+    background-color:#ffffff;
+    height: 0.2%;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: width .6s ease-in-out;
+    transition: width .6s ease-in-out;
+    transition: width .6s ease-in-out;
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+h1:hover:after,
+h1:focus:after {
+    width: 300px;
+}
+h1 {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .5s linear;
+    font-size: 50px;
+	font-weight: normal;
+}
+h1:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+h1:active {
+    color: #ffffff;
+}
+
+@keyframes b {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+.buy {
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+
+
